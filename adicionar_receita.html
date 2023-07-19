@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Cozinha Criativa</title>
+  <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+  <div>
+    <table border="0" width="900" align="center">
+      <tr>
+        <td>
+          <img src="./assets/images/logo.png" alt="Logo Cozinha Criativa" width="230px" height="auto">
+        </td>
+        <td align="right">
+          <nav>
+            <a href="./categorias/sobremesas/sobremesas.html"><strong>Sobremesas</strong></a> |
+            <a href="./categorias/carnes/carnes.html"><strong>Carnes</strong></a> |
+            <a href="./categorias/massas/massas.html"><strong>Massas</strong></a> |
+            <a href="./categorias/bebidas/bebidas.html"><strong>Bebidas</strong></a> |
+            <a href="#"><strong>Deseja adicionar uma receita?</strong></a>
+          </nav>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <img src="./assets/images/banner_add.jpg" alt="Banner" width="100%" height="400px">
+          <p>Compartilhe sua receita especial! Nesta página, você tem a oportunidade de adicionar a sua própria receita à Cozinha Criativa. Compartilhe seus pratos favoritos e inspire outros entusiastas culinários. Deixe sua marca na comunidade gastronômica, mostrando sua criatividade na cozinha. Compartilhe sua paixão pela culinária com o mundo!</p>
+          <hr>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <h2>Adicione a sua receita</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <form>
+            <table border="0" width="100%" align="center">
+              <tr>
+                <td>
+                  <label for="nome">Nome:</label><br>
+                  <input type="text" id="nome" name="nome">
+                </td>
+                <td>
+                  <label for="categoria">Categoria:</label><br>
+                  <select id="categoria" name="categoria">
+                    <option value="sobremesa">Sobremesa</option>
+                    <option value="carne">Carne</option>
+                    <option value="massa">Massa</option>
+                    <option value="bebida">Bebida</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="tempo">Tempo de preparo:</label><br>
+                  <input type="text" id="tempo" name="tempo" required><br><br>
+
+                  <label for="dificuldade">Dificuldade:</label><br>
+                  <select id="dificuldade" name="dificuldade" required>
+                    <option value="">Selecione a dificuldade</option>
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Médio</option>
+                    <option value="dificil">Difícil</option>
+                  </select><br><br>
+                </td>
+                <td>
+                  <label for="autor">Nome do autor:</label><br>
+                  <input type="text" id="autor" name="autor" required><br><br>
+
+                  <label for="email">E-mail do autor:</label><br>
+                  <input type="email" id="email" name="email" required><br><br>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label for="ingredientes">Ingredientes:</label>
+                  <br>
+                  <textarea id="ingredientes" name="ingredientes" rows="4" cols="50"></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label for="modo-preparo">Modo de Preparo:</label>
+                  <br>
+                  <textarea id="modo-preparo" name="modo-preparo" rows="4" cols="50"></textarea>
+                </td>
+              </tr>
+              <td>
+                <label for="imagem">Imagem da receita:</label><br>
+                <input type="file" id="imagem" name="imagem"><br><br>
+              </td>
+              <tr>
+                <td colspan="2" align="center">
+                  <input type="submit" value="Enviar">
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <footer>
+      <div align="center">
+        <p>&copy; 2023 Cozinha Criativa. Todos os direitos reservados.</p>
+      </div>
+    </footer>    
+  </div>
+</body>
+</html>
