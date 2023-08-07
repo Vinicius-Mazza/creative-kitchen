@@ -6,6 +6,7 @@
   <title>Cozinha Criativa</title>
   <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <header>
@@ -111,5 +112,17 @@
       </address>
     </div>
   </footer>
+  <script src="./assets/js/main.js"></script>
+  
+  <div id="newsletterDialog">
+    <h3 align="center">Assine nossa newsletter!</h3>
+    <p>Receba as últimas novidades e receitas diretamente em sua caixa de entrada.</p>
+    <form align="center">
+      <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Digite seu melhor e-mail!" required>
+      <button type="button" id="submitButton">Assinar</button>
+      <button type="button" id="closeButton">Fechar</button>
+    </form>
+  </div>
+
 </body>
 </html>
